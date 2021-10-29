@@ -1,0 +1,7 @@
+PORT: 5000
+
+MNC_SECRET: 'm3diaNus@ntaraCitra!'
+DB_HOST: localhost
+DB_USER: postgres
+DB_PASSWORD: '123456'
+DB_NAME: mnc_dev

@@ -1,0 +1,72 @@
+2021/10/28 17:56:01 method=POST, host=localhost:5000, url=/v1/api/transfer, user_agent=insomnia/2021.6.0
+2021/10/28 17:56:01 http: panic serving [::1]:54530: assignment to entry in nil map
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc00014e1e0)
+	D:/Projects/Code/Go/Go/src/net/http/server.go:1801 +0x147
+panic(0x5fca40, 0x6df2d0)
+	D:/Projects/Code/Go/Go/src/runtime/panic.go:975 +0x499
+mnc-backend/http/handlers/User.Transfer.ServeHTTP(0xc0000c9920, 0x6ed6a0, 0xc0001aa050, 0xc000192300)
+	D:/Projects/Code/Go/mnc-backend/http/handlers/User/transfer.go:79 +0x453
+mnc-backend/http/middlewares.UserAuthJwtVerify.func1(0x6ed6a0, 0xc0001aa050, 0xc000192200)
+	D:/Projects/Code/Go/mnc-backend/http/middlewares/middlewares.go:35 +0x20e
+net/http.HandlerFunc.ServeHTTP(0xc000190080, 0x6ed6a0, 0xc0001aa050, 0xc000192200)
+	D:/Projects/Code/Go/Go/src/net/http/server.go:2042 +0x4b
+mnc-backend/http/middlewares.SetContentTypeMiddleware.func1(0x6ed6a0, 0xc0001aa050, 0xc000192200)
+	D:/Projects/Code/Go/mnc-backend/http/middlewares/middlewares.go:21 +0x13d
+net/http.HandlerFunc.ServeHTTP(0xc0001900a0, 0x6ed6a0, 0xc0001aa050, 0xc000192200)
+	D:/Projects/Code/Go/Go/src/net/http/server.go:2042 +0x4b
+mnc-backend/http/middlewares.LoggingMiddleware.func1(0x6ed6a0, 0xc0001aa050, 0xc000192200)
+	D:/Projects/Code/Go/mnc-backend/http/middlewares/middlewares.go:50 +0x2cd
+net/http.HandlerFunc.ServeHTTP(0xc0001900c0, 0x6ed6a0, 0xc0001aa050, 0xc000192200)
+	D:/Projects/Code/Go/Go/src/net/http/server.go:2042 +0x4b
+github.com/gorilla/mux.(*Router).ServeHTTP(0xc00014a000, 0x6ed6a0, 0xc0001aa050, 0xc000192000)
+	D:/Projects/Code/Go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210 +0xe5
+github.com/gorilla/handlers.(*cors).ServeHTTP(0xc000148090, 0x6ed6a0, 0xc0001aa050, 0xc000192000)
+	D:/Projects/Code/Go/pkg/mod/github.com/gorilla/handlers@v1.5.1/cors.go:54 +0x105e
+github.com/gorilla/handlers.loggingHandler.ServeHTTP(0x6e69e0, 0xc0000dc010, 0x6e65e0, 0xc000148090, 0x689538, 0x6ecfe0, 0xc0001a6000, 0xc000192000)
+	D:/Projects/Code/Go/pkg/mod/github.com/gorilla/handlers@v1.5.1/logging.go:47 +0xfc
+net/http.serverHandler.ServeHTTP(0xc00011c0e0, 0x6ecfe0, 0xc0001a6000, 0xc000192000)
+	D:/Projects/Code/Go/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00014e1e0, 0x6ee2e0, 0xc000188000)
+	D:/Projects/Code/Go/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Projects/Code/Go/Go/src/net/http/server.go:2969 +0x36d
+2021/10/28 17:57:14 method=POST, host=localhost:5000, url=/v1/api/transfer, user_agent=insomnia/2021.6.0
+2021/10/28 17:57:14 http: panic serving [::1]:54868: assignment to entry in nil map
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00017a1e0)
+	D:/Projects/Code/Go/Go/src/net/http/server.go:1801 +0x147
+panic(0x131ca40, 0x13ff2d0)
+	D:/Projects/Code/Go/Go/src/runtime/panic.go:975 +0x499
+mnc-backend/http/handlers/User.Transfer.ServeHTTP(0xc00007f920, 0x140d6a0, 0xc0000ae050, 0xc000096300)
+	D:/Projects/Code/Go/mnc-backend/http/handlers/User/transfer.go:79 +0x459
+mnc-backend/http/middlewares.UserAuthJwtVerify.func1(0x140d6a0, 0xc0000ae050, 0xc000096200)
+	D:/Projects/Code/Go/mnc-backend/http/middlewares/middlewares.go:35 +0x20e
+net/http.HandlerFunc.ServeHTTP(0xc000094080, 0x140d6a0, 0xc0000ae050, 0xc000096200)
+	D:/Projects/Code/Go/Go/src/net/http/server.go:2042 +0x4b
+mnc-backend/http/middlewares.SetContentTypeMiddleware.func1(0x140d6a0, 0xc0000ae050, 0xc000096200)
+	D:/Projects/Code/Go/mnc-backend/http/middlewares/middlewares.go:21 +0x13d
+net/http.HandlerFunc.ServeHTTP(0xc0000940a0, 0x140d6a0, 0xc0000ae050, 0xc000096200)
+	D:/Projects/Code/Go/Go/src/net/http/server.go:2042 +0x4b
+mnc-backend/http/middlewares.LoggingMiddleware.func1(0x140d6a0, 0xc0000ae050, 0xc000096200)
+	D:/Projects/Code/Go/mnc-backend/http/middlewares/middlewares.go:50 +0x2cd
+net/http.HandlerFunc.ServeHTTP(0xc0000940c0, 0x140d6a0, 0xc0000ae050, 0xc000096200)
+	D:/Projects/Code/Go/Go/src/net/http/server.go:2042 +0x4b
+github.com/gorilla/mux.(*Router).ServeHTTP(0xc000176000, 0x140d6a0, 0xc0000ae050, 0xc000096000)
+	D:/Projects/Code/Go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210 +0xe5
+github.com/gorilla/handlers.(*cors).ServeHTTP(0xc000174090, 0x140d6a0, 0xc0000ae050, 0xc000096000)
+	D:/Projects/Code/Go/pkg/mod/github.com/gorilla/handlers@v1.5.1/cors.go:54 +0x105e
+github.com/gorilla/handlers.loggingHandler.ServeHTTP(0x14069e0, 0xc000006020, 0x14065e0, 0xc000174090, 0x13a9530, 0x140cfe0, 0xc0000aa000, 0xc000096000)
+	D:/Projects/Code/Go/pkg/mod/github.com/gorilla/handlers@v1.5.1/logging.go:47 +0xfc
+net/http.serverHandler.ServeHTTP(0xc00014c0e0, 0x140cfe0, 0xc0000aa000, 0xc000096000)
+	D:/Projects/Code/Go/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00017a1e0, 0x140e2e0, 0xc00008e000)
+	D:/Projects/Code/Go/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Projects/Code/Go/Go/src/net/http/server.go:2969 +0x36d
+2021/10/28 17:58:04 method=POST, host=localhost:5000, url=/v1/api/transfer, user_agent=insomnia/2021.6.0
+2021/10/28 17:58:29 method=PATCH, host=localhost:5000, url=/v1/api/logout, user_agent=insomnia/2021.6.0
+2021/10/28 17:58:43 method=PATCH, host=localhost:5000, url=/v1/api/logout, user_agent=insomnia/2021.6.0
+2021/10/28 17:59:29 method=POST, host=localhost:5000, url=/v1/login, user_agent=insomnia/2021.6.0
+2021/10/28 17:59:50 method=PATCH, host=localhost:5000, url=/v1/api/logout, user_agent=insomnia/2021.6.0
+2021/10/28 17:59:54 method=POST, host=localhost:5000, url=/v1/login, user_agent=insomnia/2021.6.0
