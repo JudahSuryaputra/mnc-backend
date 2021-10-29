@@ -1,0 +1,14 @@
+{
+    "balances": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "amount": 8000000
+        },
+        {
+            "id": 2,
+            "user_id": 2,
+            "amount": 3000000
+        }
+    ]
+}

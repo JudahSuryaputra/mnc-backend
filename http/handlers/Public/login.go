@@ -54,7 +54,7 @@ func (c Login) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		Email:       request.Email,
 		AccessToken: accessToken,
 	}
-	err = access_token.InsertorUpdateAccessToken(sess, insertAccessTokenRequest)
+	err = access_token.InsertAccessToken(sess, insertAccessTokenRequest)
 	if err != nil {
 		formatter.ERROR(w, http.StatusInternalServerError, err)
 		return

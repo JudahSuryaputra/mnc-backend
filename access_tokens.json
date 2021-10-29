@@ -1,0 +1,10 @@
+{
+    "access_tokens": [
+        {
+            "id": 4,
+            "email": "judah@mail.com",
+            "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imp1ZGFoQG1haWwuY29tIiwiRXhwaXJlc0F0IjoxNjM1NDIwNTk0LCJGaXJzdE5hbWUiOiJKdWRhaCIsIklEIjoxLCJVc2VyVHlwZSI6InVzZXIifQ.XDZuPrMHb7W4ddHr4XF3_7JWIospIgOZxUKpXBCjjL4",
+            "created_at": "2021-10-28T10:59:54.753Z"
+        }
+    ]
+}

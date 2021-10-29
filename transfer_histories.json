@@ -1,0 +1,12 @@
+{
+    "transfer_histories": [
+        {
+            "id": 1,
+            "sender_id": 1,
+            "receiver_id": 2,
+            "amount": 2000000,
+            "message": null,
+            "created_at": "2021-10-28T10:58:04.588Z"
+        }
+    ]
+}
